@@ -48,3 +48,8 @@ If you've got make & docker installed you can easily build and serve a local ver
 in the root of this project.
 
 You'll find your local copy of the docs at http://localhost:4000, and it should update with any changes without you having to re-run the make command.
+
+
+## Contents
+
+- [Setting up your AWS network](core/setting-up-your-aws-network.md)

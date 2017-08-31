@@ -1,0 +1,19 @@
+# This is loaded first, so needs hardcoded values, no interpolation is possible
+# If you don't want to use your default AWS user, you'll want to specify credentails / roles / profiles as relevant
+# https://www.terraform.io/docs/backends/types/s3.html
+
+# You'll also need to create the state bucket yourself outside of terraform
+# MAKE SURE THIS BUCKET IS NOT PUBLICALLY ACCESSIBLE!
+
+terraform {
+  // require 0.9 for backend config, and 0.9.8 for lambda tags
+  required_version = ">= 0.9.8"
+
+  backend "s3" {
+    bucket = "<s3buckettostorestate>"
+    key    = "vpc"
+    profile = "default"
+
+    region = "eu-west-1"
+  }
+}

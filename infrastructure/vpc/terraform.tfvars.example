@@ -1,0 +1,5 @@
+account_id=000000000000
+region="eu-west-1"
+application="myapplication"
+profile="default"
+provisionersrc="https://github.com/<user>/<repository>"
